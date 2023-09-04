@@ -13,10 +13,19 @@ body{
 }
 
 .page h1{
+    font-size: 50px;
     margin: 0;
 }
 
+.page h3{
+    font-size: 30px;
+}
+
 .page p{
+    border: 1px black solid;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
     color: black;
 }
 
