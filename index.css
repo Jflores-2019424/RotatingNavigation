@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+.page{
+    margin: 60px;
+}
+
+.page h1{
+    margin: 0;
+}
+
+.page p{
+    color: black;
+}
+
+.page img{
+    width: 80%;
+}
+
+.container{
+    background-color: white;
+    transform-origin: top left;
+    transition: 0.5s;
+    width: 1000px;
+    height: 1000px;
+    padding: 40px;
+}
+
+.container.nav{
+    transform: rotate(-15deg);
+}
+
+.nav-container{
+    top: -60px;
+    left: -60px;
+    position: fixed;
+}
+
+.menu{
+    background-color: blue;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 90px 90px 90px 90px;
+    transition: 0.5s;
+}
+
+.container.nav .menu{
+    transform: rotate(-80deg);
+}
+
+.menu button{
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.menu button:hover{
+    transform: scale(1.1);
+}
+
+.menu button#open{
+    left: 50%;
+}
+
+.menu button#close{
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+nav ul li{
+    color: white;
+    margin: 30px 30px 30px 30px;
+    transform: translateX(-80%);
+    transform: 0.5s;
+}
+
+nav ul li i{
+    margin: 10px 10px 10px 10px;
+}
