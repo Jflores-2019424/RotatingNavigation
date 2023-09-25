@@ -4,7 +4,6 @@
 
 body{
     margin: 0;
-    overflow: hidden;
     background-color: blueviolet;
 }
 
@@ -30,15 +29,15 @@ body{
 }
 
 .page img{
-    width: 80%;
+    width: 100vh;
 }
 
 .container{
     background-color: white;
     transform-origin: top left;
     transition: 0.5s;
-    width: 1000px;
-    height: 1000px;
+    width: 210vh;
+    height: 200vh;
     padding: 40px;
 }
 
